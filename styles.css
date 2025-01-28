@@ -1,0 +1,139 @@
+/* Estilo Geral */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #1a237e, #0d47a1); /* Azul escuro gradiente */
+    color: #ffeb3b; /* Amarelo brilhante */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: #0d47a1; /* Azul escuro sólido */
+    color: #ffeb3b; /* Amarelo */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 28px;
+    margin: 0;
+}
+
+header p {
+    font-size: 16px;
+    margin: 5px 0 0;
+}
+
+main {
+    max-width: 600px;
+    margin: 30px auto;
+    background: #283593; /* Azul médio */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #ffeb3b; /* Amarelo */
+}
+
+form label.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ffeb3b; /* Borda amarela */
+    border-radius: 5px;
+    background: #1c54b2; /* Azul mais claro */
+    color: #ffffff;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background: #ffeb3b; /* Botão amarelo */
+    color: #0d47a1; /* Texto azul escuro */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #ffd600; /* Amarelo mais brilhante */
+}
+
+/* Botão do Google Lens */
+.lens-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ffeb3b; /* Fundo amarelo */
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.lens-link:hover {
+    background-color: #ffd600; /* Amarelo mais brilhante */
+}
+
+.lens-icon {
+    width: 40px; /* Tamanho do ícone */
+    height: 40px;
+    vertical-align: middle;
+}
+
+/* Resultado */
+#resultado {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    background: #3949ab; /* Azul escuro */
+    color: #ffeb3b; /* Texto amarelo */
+    font-weight: bold;
+    text-align: center;
+}
+
+.verde {
+    color: #76ff03; /* Verde brilhante */
+}
+
+.vermelho {
+    color: #ff1744; /* Vermelho brilhante */
+}
+
+/* Histórico */
+#historico {
+    margin-top: 20px;
+}
+
+#historico h2 {
+    font-size: 20px;
+    color: #ffeb3b; /* Amarelo */
+    margin-bottom: 10px;
+}
+
+#lista-historico {
+    list-style: none;
+    padding: 0;
+}
+
+#lista-historico li {
+    padding: 10px;
+    background: #283593; /* Azul médio */
+    border: 1px solid #ffeb3b; /* Borda amarela */
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: #ffeb3b; /* Texto amarelo */
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Preços - Nirik Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Calculadora de Preços - Nirik Store</h1>
+        <p>Simule preços com taxas, margem de lucro e mais.</p>
+    </header>
+    <main>
+        <form id="calculator-form">
+            <label for="nome-produto">Nome do Produto (opcional):</label>
+            <input type="text" id="nome-produto" placeholder="Ex: Fone de Ouvido">
+
+            <label for="preco-fornecedor">Preço do Fornecedor (R$):</label>
+            <input type="number" id="preco-fornecedor" step="0.01" required placeholder="Ex: 10.00">
+
+            <label class="checkbox-label">
+                <input type="checkbox" id="produto-maior-8">
+                Produto custa mais de R$8?
+            </label>
+
+            <label for="preco-comparacao">Preço de Comparação (opcional):</label>
+            <input type="number" id="preco-comparacao" step="0.01" placeholder="Ex: 15.00">
+
+            <label for="upload-imagem">Tirar foto ou enviar imagem do produto:</label>
+            <input type="file" id="upload-imagem" accept="image/*">
+
+            <button type="button" id="calcular-btn">Calcular</button>
+        </form>
+
+        <!-- Botão do Google Lens -->
+        <a href="https://lens.google/" target="_blank" class="lens-link">
+            <img src="googlelenslogo.png" alt="Google Lens Logo" class="lens-icon">
+        </a>
+
+        <section id="resultado">
+            <h2>Resultado</h2>
+            <p id="resultado-texto">Preencha os campos e clique em "Calcular".</p>
+        </section>
+
+        <section id="historico">
+            <h2>Histórico de Cálculos</h2>
+            <ul id="lista-historico">
+                <!-- Histórico será preenchido dinamicamente -->
+            </ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
